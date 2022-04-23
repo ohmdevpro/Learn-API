@@ -6,5 +6,8 @@
 4. method get ก็คือ / หลัง URL เช่น https://example.com/test จะเห็นว่า /test จะเรียกว่า get
 5. method post ก็คือ การส่งข้อมูลไปฝั่ง backend และ backend ก็ส่งข้อมูลไปตามที่เจ้าของเว็บไซต์ set เอาไว้ เช่น name=john&animal=dog จะเรียกว่า post และมีอีกอันจะเรียกว่า json เช่น {"name":"john","animal":"dog"}
 
-6. ตัวอย่างการต่อ  =>
+6. ตัวอย่างการต่อ :
+
+import requests
+
 name = requests.post("http://localhost:8000/",data={"name":"john","lastname":"pig",headers={"User-Agent":"xxxxx"})
