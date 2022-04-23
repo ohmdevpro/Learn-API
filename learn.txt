@@ -1,0 +1,10 @@
+วิธีการเชื่อมต่อ API เว็บต่างๆด้วยภาษา Python ง่ายนิดเดียว!
+
+1. import โมดูล เกี่ยวกับการ requests ตัวอย่างเช่น import requests
+2. สร้างตัวแปรกับการ requests เช่น name = requests.get หรือ .post
+3. ทำความเข้าใจกับ method [get, post]
+4. method get ก็คือ / หลัง URL เช่น https://example.com/test จะเห็นว่า /test จะเรียกว่า get
+5. method post ก็คือ การส่งข้อมูลไปฝั่ง backend และ backend ก็ส่งข้อมูลไปตามที่เจ้าของเว็บไซต์ set เอาไว้ เช่น name=john&animal=dog จะเรียกว่า post และมีอีกอันจะเรียกว่า json เช่น {"name":"john","animal":"dog"}
+
+6. ตัวอย่างการต่อ  =>
+name = requests.post("http://localhost:8000/",data={"name":"john","lastname":"pig",headers={"User-Agent":"xxxxx"})
